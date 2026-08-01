@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Friendship Day!</title>
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Floating Heart Canvas Overlay -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- SECTION 1: iOS Lockscreen Notification -->
+  <section id="sec1">
+    <p class="subtitle">New Secret Message</p>
+    <a href="#sec2" class="notification-banner">
+      <div class="notif-header">
+        <span>💬 MESSAGES</span>
+        <span style="margin-left: auto;">Just now</span>
+      </div>
+      <h3 style="font-size: 1rem; color: #fff; margin-bottom: 4px;">Best Friend ❤️</h3>
+      <p style="margin-bottom: 0; font-size: 0.85rem; color: rgba(255,255,255,0.8);">You have 1 unread memory gift. Tap to unlock!</p>
+    </a>
+    
+    <a href="#sec2" class="scroll-indicator">
+      <span>Scroll Down</span>
+      <span>▼</span>
+    </a>
+  </section>
+
+  <!-- SECTION 2: Wish -->
+  <section id="sec2">
+    <div class="flower-icon">✨🥳✨</div>
+    <div class="subtitle">Celebration Time</div>
+    <h1>Happy Friendship Day!</h1>
+    <p>Today is all about celebrating you, our shared laughs, and the bond that keeps us strong through everything.</p>
+    <a href="#sec3" class="scroll-indicator">
+      <span>Keep Scrolling</span>
+      <span>▼</span>
+    </a>
+  </section>
+
+  <!-- SECTION 3: Supporter & Strength -->
+  <section id="sec3">
+    <div class="subtitle">Why You're Special</div>
+    <h2>My Supporter & Strength</h2>
+    <p style="font-size: 0.85rem;">Thank you for always being my foundation.</p>
+
+    <div class="badge-grid">
+      <div class="badge-item">
+        <span style="font-size: 1.3rem;">🛡️</span>
+        <span>My Safe Haven & Confidant</span>
+      </div>
+      <div class="badge-item">
+        <span style="font-size: 1.3rem;">⚡</span>
+        <span>My Biggest Cheerleader</span>
+      </div>
+      <div class="badge-item">
+        <span style="font-size: 1.3rem;">🌟</span>
+        <span>Constant Pillar of Strength</span>
+      </div>
+    </div>
+
+    <a href="#sec4" class="scroll-indicator">
+      <span>See Memories</span>
+      <span>▼</span>
+    </a>
+  </section>
+
+  <!-- SECTION 4: Clickable Memory Stack -->
+  <section id="sec4">
+    <div class="subtitle">Memory Gallery</div>
+    <h2>Moments We Cherish</h2>
+    <p style="font-size: 0.8rem; margin-bottom: 5px;">Tap the photo to see the next memory! 📸</p>
+
+    <div class="card-deck" onclick="rotateCards()">
+      <div class="stack-card" style="transform: rotate(-4deg); z-index: 3;">
+        <img src="pic1.jpeg"alt="Pic 1">
+        <span>Best Times Together ✨</span>
+      </div>
+      <div class="stack-card" style="transform: rotate(3deg); z-index: 2;">
+        <img src="pic2.jpeg" alt="Pic 2">
+        <span>Late Night Laughs 😂</span>
+      </div>
+      <div class="stack-card" style="transform: rotate(-2deg); z-index: 1;">
+        <img src="pic3.jpeg" alt="Pic 3">
+        <span>Partner in Crime 🤜🤛</span>
+      </div>
+    </div>
+
+    <a href="#sec5" class="scroll-indicator">
+      <span>Read Letter</span>
+      <span>▼</span>
+    </a>
+  </section>
+
+  <!-- SECTION 5: Heartfelt Letter -->
+  <section id="sec5">
+    <div class="subtitle">From the Heart</div>
+    <h2>A Letter For You 💌</h2>
+
+    <div class="letter-box">
+      <p>Dear Bestie,</p>
+      <p>I just wanted to take a moment to tell you how grateful I am to have you in my life. Life is brighter, funnier, and easier with you around.</p>
+      <p>Thank you for always standing by me!</p>
+      <p style="text-align: right; margin-top: 10px; font-weight: bold; color: #ff2a5f;">— Forever ❤️</p>
+    </div>
+
+    <a href="#sec1" class="replay-btn">Back to Top ⬆️</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
